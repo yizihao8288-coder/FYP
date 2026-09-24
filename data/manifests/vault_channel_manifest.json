@@ -1,5 +1,5 @@
 {
-  "generated_utc": "2026-09-24T04:36:26+00:00",
+  "generated_utc": "2026-09-24T09:55:37+00:00",
   "root": "D:\\FYP_DataVault\\csi300_breakout_events",
   "files": [
     {
@@ -1476,6 +1476,51 @@
       "path": "archive/separate_project_trend_volume_research/tests/test_statistics.py",
       "bytes": 642,
       "sha256": "d02a229e30059d7b6e15667405c133cc7b35490c851eb6d85f263b93ed61cb81"
+    },
+    {
+      "path": "archive/thesis_public_workbook_renders_20260924/failure60_results_summary_Notes.png",
+      "bytes": 23812,
+      "sha256": "8cb36955883c11f69f40953433e96be602f23e52736f5b97ce0f74cd6fe546ac"
+    },
+    {
+      "path": "archive/thesis_public_workbook_renders_20260924/failure60_results_summary_README.png",
+      "bytes": 30875,
+      "sha256": "df562c4f7245fa9c57d9dbb2af1f86187061654dc8b12800dfb834245fe1d764"
+    },
+    {
+      "path": "archive/thesis_public_workbook_renders_20260924/failure60_results_summary_Regression_Results.png",
+      "bytes": 57276,
+      "sha256": "da38b46e1de1449c470ba9e80efb16142b795e723a59e742b954295719d567c3"
+    },
+    {
+      "path": "archive/thesis_public_workbook_renders_20260924/failure60_results_summary_RVOL_Groups.png",
+      "bytes": 16302,
+      "sha256": "45854394bf9f618fe87e7c008ba9ac9f33b3d8f297d8a78827c0c8936afde0fd"
+    },
+    {
+      "path": "archive/thesis_public_workbook_renders_20260924/failure60_results_summary_Status_Counts.png",
+      "bytes": 14847,
+      "sha256": "6d3727c8872a8dd947c8b2f3296c69817c3e4152b04ad6d5f129ab5bb83c58bd"
+    },
+    {
+      "path": "archive/thesis_public_workbook_renders_20260924/market_adjusted_results_summary_Notes.png",
+      "bytes": 22695,
+      "sha256": "b69df7ab6dd699dd0e788a0854bc3900d1323fdbbcc3d5cf260a1235cd467be4"
+    },
+    {
+      "path": "archive/thesis_public_workbook_renders_20260924/market_adjusted_results_summary_README.png",
+      "bytes": 30427,
+      "sha256": "321ee88c9f5a927224b3c1347fd7342f9656ae0867b2ccd8367804c072c75a67"
+    },
+    {
+      "path": "archive/thesis_public_workbook_renders_20260924/market_adjusted_results_summary_Regression_Results.png",
+      "bytes": 106695,
+      "sha256": "fc0fa2636e6fc52651684606aeab6eff928e471b1aa9d0b977168b5ea7a44d90"
+    },
+    {
+      "path": "archive/thesis_public_workbook_renders_20260924/market_adjusted_results_summary_Summary.png",
+      "bytes": 22185,
+      "sha256": "ae12452b10d1a150aa953ed7e631430238e7b8c2a9af8cc7dad22e790942adf1"
     },
     {
       "path": "external_sources/fyp_reference_materials/01_保险精算与随机过程/Gambler ruin problem.pdf",

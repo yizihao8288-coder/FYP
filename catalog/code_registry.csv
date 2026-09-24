@@ -25,4 +25,6 @@ C023,tests/test_price_source_audit.py,test_price_source_audit模块或测试,详
 C024,tests/test_project_control.py,test_project_control模块或测试,详见文件docstring及对应测试,见代码和REPRODUCIBILITY.md,见结果登记表或测试输出,inspect before change,tests/ or internal assertions,current,修改前先确认是否触及baseline；所有命令写入D盘
 C025,tests/test_sample_quality_audit.py,test_sample_quality_audit模块或测试,详见文件docstring及对应测试,见代码和REPRODUCIBILITY.md,见结果登记表或测试输出,inspect before change,tests/ or internal assertions,current,修改前先确认是否触及baseline；所有命令写入D盘
 C026,tools/build_control_workbooks.mjs,build_control_workbooks模块或测试,详见文件docstring及对应测试,见代码和REPRODUCIBILITY.md,见结果登记表或测试输出,inspect before change,tests/ or internal assertions,current,修改前先确认是否触及baseline；所有命令写入D盘
-C027,tools/project_control.py,双通道同步、登记和hash验证,复制到DataVault并生成研究索引,见代码和REPRODUCIBILITY.md,见结果登记表或测试输出,no,tests/ or internal assertions,current,修改前先确认是否触及baseline；所有命令写入D盘
+C027,tools/build_public_summary_workbooks.mjs,生成不含事件明细的公开补充结果工作簿,从完整审计工作簿提取汇总、回归和方法工作表,见代码和REPRODUCIBILITY.md,见结果登记表或测试输出,no,tests/ or internal assertions,current,修改前先确认是否触及baseline；所有命令写入D盘
+C028,tools/build_thesis_writing_package.py,生成按论文章节排列的公开写作包,复制已验证结果、核对SHA-256并生成文件manifest,见代码和REPRODUCIBILITY.md,见结果登记表或测试输出,no,tests/ or internal assertions,current,修改前先确认是否触及baseline；所有命令写入D盘
+C029,tools/project_control.py,双通道同步、登记和hash验证,复制到DataVault并生成研究索引,见代码和REPRODUCIBILITY.md,见结果登记表或测试输出,no,tests/ or internal assertions,current,修改前先确认是否触及baseline；所有命令写入D盘

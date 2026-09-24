@@ -34,11 +34,14 @@ The event pool D008 has SHA-256 `6e8485a4716caa6035bf0616d0b4dd9b7b91da8adf7c611
 - Full research audit, reviewer report and project reconstruction.
 - D-drive DataVault, file registries, curated results and automated verification.
 - Public GitHub repository connected at `https://github.com/yizihao8288-coder/FYP`; only approved code, documentation, manifests and curated results are published.
+- Thesis-aligned writing package created at `00_THESIS_WRITING_GUIDE/`: every chapter explains the logic, method, result, interpretation boundary and corresponding files.
+- Public-safe summary workbooks added for market-adjusted returns and Failure60; their event-level source sheets remain in DataVault.
 
 ## In progress
 
 - Connect `D:\FYP_DataVault\csi300_breakout_events` to an off-device private cloud client located on D drive.
-- Use the evidence matrix to draft Chapter 4 and defence responses.
+- Draft Chapter 2 literature review from verified academic sources; no source library has yet been registered.
+- Use the chapter guide and evidence matrix to draft Chapter 4 and defence responses.
 
 ## Next recommended analysis
 
@@ -63,6 +66,7 @@ These are future robustness extensions. They must not replace the current baseli
 | Run registry | `catalog/runs.csv` | Input-code-output history |
 | Migration inventory | `catalog/migration_inventory.csv` | Routing of every scanned file |
 | Current sync check | `docs/PROJECT_SYNC_STATUS.md` | Machine-generated latest verification |
+| Thesis writing guide | `00_THESIS_WRITING_GUIDE/README.md` | Plain-language chapter-by-chapter writing and evidence map |
 
 ## Main findings
 

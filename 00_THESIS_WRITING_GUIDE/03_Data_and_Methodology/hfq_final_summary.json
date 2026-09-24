@@ -1,0 +1,63 @@
+{
+  "sample_price_source": "eastmoney_hfq",
+  "price_analysis_start": "2015-01-01",
+  "price_target_end": "2026-09-01",
+  "calendar_observed_end": "2026-09-01",
+  "event_start": "2016-01-01",
+  "event_end": "2026-06-08",
+  "latest_event_date_with_full_calendar_R60": "2026-06-08",
+  "all_allowed_event_dates_have_full_calendar_R60": true,
+  "historical_codes_with_no_rows_in_required_period": 6,
+  "final_main_event_count": 193,
+  "future_returns_computed": true,
+  "CAR_computed": false,
+  "return_horizons_market_days": [
+    3,
+    5,
+    20,
+    60
+  ],
+  "primary_return_horizon": 20,
+  "future_return_definition": "adjusted_close[t+h] / adjusted_close[t] - 1 on the h-th CSI300 market trading day; no fill or interpolation",
+  "volume_used_for_event_selection": false,
+  "relative_volume_definition": "volume_t / mean(volume over prior 60 normal trading days)",
+  "relative_turnover_definition": "turnover_t / mean(turnover_rate over prior 60 normal trading days)",
+  "return_completeness": {
+    "R3": {
+      "available": 192,
+      "missing": 1
+    },
+    "R5": {
+      "available": 193,
+      "missing": 0
+    },
+    "R20": {
+      "available": 192,
+      "missing": 1
+    },
+    "R60": {
+      "available": 192,
+      "missing": 1
+    }
+  },
+  "versions": {
+    "A_main": {
+      "event_count": 193,
+      "stock_count": 160,
+      "bandwidth_threshold": 0.25,
+      "trend_slope_threshold": 0.0004
+    },
+    "B_strict": {
+      "event_count": 121,
+      "stock_count": 95,
+      "bandwidth_threshold": 0.2,
+      "trend_slope_threshold": 0.0003
+    },
+    "C_loose": {
+      "event_count": 320,
+      "stock_count": 221,
+      "bandwidth_threshold": 0.3,
+      "trend_slope_threshold": 0.0006
+    }
+  }
+}

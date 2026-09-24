@@ -2,16 +2,21 @@
 
 本仓库保存研究代码、研究设计、验证规则、论文级结果和文件索引。原始行情、处理缓存和冻结事件级数据保存在D盘私有DataVault，不上传GitHub。
 
+> **写论文请从 [`00_THESIS_WRITING_GUIDE`](00_THESIS_WRITING_GUIDE/README.md) 开始。** 这里按“引言→文献综述→数据与方法→实证结果→稳健性→讨论→结论→附录”排列。每个部分都用通俗语言解释：为什么做、怎么做、得到了什么、应该打开哪些文件。
+
 公开仓库：`https://github.com/yizihao8288-coder/FYP`。公开可见内容限于本仓库已登记的代码、文档、精选论文结果和manifest；DataVault中的原始、处理及冻结事件级数据不在公开范围内。
 
 ## 从这里开始
 
-1. [Research Control Center](docs/RESEARCH_CONTROL_CENTER.md)：当前做到哪里、哪些文件有效、下一步是什么。
-2. [Research Design](docs/RESEARCH_DESIGN.md)：事件定义、变量、模型和设计理由。
-3. [Data Dictionary](docs/DATA_DICTIONARY.md)：数据层级与变量公式。
-4. [Thesis Evidence Matrix](docs/THESIS_EVIDENCE_MATRIX.md)：论文结论由哪些表、图和模型支持。
-5. [Reproducibility](docs/REPRODUCIBILITY.md)：如何验证和重新运行。
-6. [Project Map workbook](docs/Research_Project_Map.xlsx)：适合在Excel中浏览的项目总览。
+1. [论文写作导航](00_THESIS_WRITING_GUIDE/README.md)：按论文章节找逻辑、方法、结果和对应文件。
+2. [Research Control Center](docs/RESEARCH_CONTROL_CENTER.md)：当前做到哪里、哪些文件有效、下一步是什么。
+3. [Research Design](docs/RESEARCH_DESIGN.md)：事件定义、变量、模型和设计理由。
+4. [Data Dictionary](docs/DATA_DICTIONARY.md)：数据层级与变量公式。
+5. [Thesis Evidence Matrix](docs/THESIS_EVIDENCE_MATRIX.md)：论文结论由哪些表、图和模型支持。
+6. [Reproducibility](docs/REPRODUCIBILITY.md)：如何验证和重新运行。
+7. [Project Map workbook](docs/Research_Project_Map.xlsx)：适合在Excel中浏览的项目总览。
+
+`catalog/`是供程序核对的后台账本，不是写论文的起点。它记录文件hash、来源链和运行记录；日常写作不需要逐列阅读这些CSV。
 
 ## 当前权威状态
 

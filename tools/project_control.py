@@ -117,7 +117,7 @@ def classify(path: Path) -> dict[str, str]:
         return {"channel": "Regenerable", "category": "git_internal", "status": "generated",
                 "dataset_id": "", "purpose": "Git内部对象，不进入研究清单",
                 "destination": "local .git", "delete_policy": "由Git管理"}
-    if low.startswith(project_prefix + ".runtime/") or "/__pycache__/" in low or filename.endswith((".pyc", ".pyo")):
+    if low.startswith(project_prefix + ".runtime/") or low.startswith(project_prefix + ".pytest_cache/") or "/__pycache__/" in low or filename.endswith((".pyc", ".pyo")):
         return {"channel": "Regenerable", "category": "runtime", "status": "generated",
                 "dataset_id": "", "purpose": "依赖环境或Python缓存，可由requirements-lock重建",
                 "destination": "not synced; rebuild from lock file", "delete_policy": "可重建，不手工编辑"}
@@ -170,13 +170,17 @@ def classify(path: Path) -> dict[str, str]:
                 "dataset_id": "D014", "purpose": purpose,
                 "destination": f"archive/project_outputs_snapshot_{DATE_STAMP}", "delete_policy": "原路径暂不删除"}
     if low.startswith(project_prefix + "final_empirical_result/"):
-        return {"channel": "GitHub", "category": "paper_result", "status": "validated",
-                "dataset_id": "", "purpose": "论文级Table1-7、Figure1-6与结果摘要",
-                "destination": "results/paper_v1", "delete_policy": "保留；已复制到规范目录"}
+        return {"channel": "Archive", "category": "duplicate_paper_result", "status": "duplicate_verified",
+                "dataset_id": "", "purpose": "旧论文结果目录；20个文件与results/paper_v1逐字节一致",
+                "destination": "archive/project_outputs_snapshot_20260924", "delete_policy": "保留至用户批准；公开仓库只保留规范副本"}
     if low.startswith(project_prefix + "results/"):
         return {"channel": "GitHub", "category": "curated_result", "status": "validated",
                 "dataset_id": "", "purpose": "可追溯的精选研究结果",
                 "destination": rel, "delete_policy": "按版本保留"}
+    if low.startswith(project_prefix + "00_thesis_writing_guide/"):
+        return {"channel": "GitHub", "category": "thesis_writing", "status": "validated",
+                "dataset_id": "", "purpose": "按论文章节组织的通俗写作说明和对应证据副本",
+                "destination": rel, "delete_policy": "由生成脚本和Git版本管理"}
     if any(low.startswith(project_prefix + prefix) for prefix in ("src/", "tests/", "tools/", "docs/", "catalog/", "config/")):
         category = low.split("/", 2)[1]
         return {"channel": "GitHub", "category": category, "status": "validated",
@@ -335,6 +339,8 @@ def code_registry() -> list[dict[str, str]]:
         "final_paper_analysis_pipeline.py": ("生成论文Table1-7和Figure1-6", "读取冻结结果并整理为论文格式", "no"),
         "run.ps1": ("D盘运行入口", "设置D盘临时目录、运行测试或正式流程", "no"),
         "tools/project_control.py": ("双通道同步、登记和hash验证", "复制到DataVault并生成研究索引", "no"),
+        "tools/build_thesis_writing_package.py": ("生成按论文章节排列的公开写作包", "复制已验证结果、核对SHA-256并生成文件manifest", "no"),
+        "tools/build_public_summary_workbooks.mjs": ("生成不含事件明细的公开补充结果工作簿", "从完整审计工作簿提取汇总、回归和方法工作表", "no"),
     }
     paths = [PROJECT/name for name in ["analysis_pipeline.py","robustness_pipeline.py","final_paper_analysis_pipeline.py","run.ps1"]]
     paths += scan_tree(PROJECT/"src") + scan_tree(PROJECT/"tests") + scan_tree(PROJECT/"tools")
@@ -386,6 +392,28 @@ def artifact_registry() -> list[dict[str, str]]:
                      "输入数据ID及hash":inputs,"生成代码":code,"模型或参数":model,
                      "主要结论":"见对应文件与THESIS_EVIDENCE_MATRIX.md","解释边界":boundary,
                      "论文位置":section,"验证状态":"validated"})
+    rows.extend([
+        {"结果ID":"W01","文件名":"README.md","类型":"writing guide","路径":"00_THESIS_WRITING_GUIDE/README.md",
+         "研究问题":"按论文章节解释研究逻辑、方法、结果与证据文件","输入数据ID及hash":"D009及已验证结果登记",
+         "生成代码":"tools/build_thesis_writing_package.py","模型或参数":"thesis_writing_v1",
+         "主要结论":"论文写作唯一入口；不新增实证结论","解释边界":"章节目录是写作副本，正式计算来源仍以结果登记为准",
+         "论文位置":"All chapters","验证状态":"validated"},
+        {"结果ID":"W02","文件名":"FILE_COVERAGE_AUDIT.md","类型":"coverage report","路径":"00_THESIS_WRITING_GUIDE/FILE_COVERAGE_AUDIT.md",
+         "研究问题":"GitHub是否遗漏论文证据文件","输入数据ID及hash":"项目清单与逐文件SHA-256",
+         "生成代码":"manual audit + tools/build_thesis_writing_package.py","模型或参数":"public-safety boundary",
+         "主要结论":"论文级表图已覆盖；事件级完整数据保留在DataVault","解释边界":"未核实许可的行情与冻结事件级数据不公开",
+         "论文位置":"Project administration","验证状态":"validated"},
+        {"结果ID":"W03","文件名":"market_adjusted_results_summary.xlsx","类型":"table","路径":"00_THESIS_WRITING_GUIDE/05_Robustness_and_Additional/05_Market_Adjusted_Return/market_adjusted_results_summary.xlsx",
+         "研究问题":"市场调整后ln_RVOL与R20/R60是否仍为负","输入数据ID及hash":"D009; full audit workbook retained in DataVault",
+         "生成代码":"tools/build_public_summary_workbooks.mjs","模型或参数":"AR=stock return-CSI300 return; OLS+HC3",
+         "主要结论":"核心系数仍为负但传统水平不显著","解释边界":"公开版不含事件级工作表；不能写成完全稳健",
+         "论文位置":"Chapter 5 Additional Analysis","验证状态":"validated"},
+        {"结果ID":"W04","文件名":"failure60_results_summary.xlsx","类型":"table","路径":"00_THESIS_WRITING_GUIDE/05_Robustness_and_Additional/06_Failure60/failure60_results_summary.xlsx",
+         "研究问题":"ln_RVOL与60日突破失败是否相关","输入数据ID及hash":"D009; full audit workbook retained in DataVault",
+         "生成代码":"tools/build_public_summary_workbooks.mjs","模型或参数":"Failure60 Logit + controls",
+         "主要结论":"样本内关联为正","解释边界":"仅14个完整非失败事件；公开版不含事件级工作表",
+         "论文位置":"Chapter 5 Additional Analysis","验证状态":"validated"},
+    ])
     return rows
 
 
@@ -399,6 +427,7 @@ def run_registry() -> list[dict[str, str]]:
         {"运行ID":"RUN004","日期":"2026-09-19","Git commit":"pre-Git historical run","输入数据hash":EXPECTED_BASELINE_SHA256,"参数版本":"paper_v1","执行命令":"final_paper_analysis_pipeline.py","输出结果ID":"T01-T07,F01-F06,R01","测试结果":"saved validation completed","是否成功":"yes","备注":"论文级结果包"},
         {"运行ID":"RUN005","日期":"2026-09-20","Git commit":"pre-Git historical run","输入数据hash":EXPECTED_BASELINE_SHA256,"参数版本":"audit_20260919","执行命令":"audit_pipeline.py","输出结果ID":"A01,R02","测试结果":"8754 original hashes unchanged","是否成功":"yes","备注":"新增市场调整与Failure60，不改baseline"},
         {"运行ID":"RUN006","日期":"2026-09-24","Git commit":control_commit,"输入数据hash":EXPECTED_BASELINE_SHA256,"参数版本":"control_v1","执行命令":"python tools/project_control.py all","输出结果ID":"project registries and manifests","测试结果":"由verification_report.json记录","是否成功":control_success,"备注":"双通道同步与研究说明系统"},
+        {"运行ID":"RUN007","日期":"2026-09-24","Git commit":control_commit,"输入数据hash":EXPECTED_BASELINE_SHA256,"参数版本":"thesis_writing_v1","执行命令":"node tools/build_public_summary_workbooks.mjs; python tools/build_thesis_writing_package.py","输出结果ID":"W01-W04及论文章节证据副本","测试结果":"逐文件hash核对、工作簿公式扫描与逐页渲染检查","是否成功":"yes","备注":"不改baseline；事件级工作表留在DataVault"},
     ]
 
 
@@ -414,6 +443,7 @@ def decision_registry() -> list[dict[str, str]]:
         {"决策ID":"ADR008","日期":"2026-09","问题":"异常值处理","备选方案":"删除;winsorize;原样保留","最终决定":"原样保留","为什么":"避免结果导向处理并维持冻结样本","代价":"小样本估计可能受极端事件影响","重新评估条件":"只允许透明敏感性分析，不替代原结果"},
         {"决策ID":"ADR009","日期":"2026-09","问题":"突破信号执行时点","备选方案":"同收盘价可交易;收盘后确认","最终决定":"收盘后确认","为什么":"当日收盘和成交量只有收盘后完整可知","代价":"不能直接解释为同收盘价执行策略","重新评估条件":"未来构造次日开盘执行版本"},
         {"决策ID":"ADR010","日期":"2026-09-24","问题":"GitHub仓库可见性","备选方案":"private;public","最终决定":"public by user decision","为什么":"用户明确不要求private，希望直接公开管理","代价":"代码、论文结果、hash清单和部分本机路径记录对外可见；原始行情与冻结CSV仍不上传","重新评估条件":"答辩或数据许可要求变化时重新评估"},
+        {"决策ID":"ADR011","日期":"2026-09-24","问题":"如何让论文写作与项目文件一一对应","备选方案":"只保留技术目录;彻底移动原文件;新增章节化写作入口","最终决定":"新增章节化写作入口，同时保留权威技术目录","为什么":"初学者可按论文顺序理解逻辑、方法、结果和证据，又不破坏既有路径与复现链","代价":"产生受manifest约束的只读副本，需要自动核对hash","重新评估条件":"学校最终论文模板确定后调整章节名称，不改变计算结果"},
     ]
 
 
@@ -594,7 +624,7 @@ Generated: {now_iso()}
 
 ## File routing
 
-{os.linesep.join(f'- {key}: {value} files' for key,value in sorted(counts.items()))}
+{chr(10).join(f'- {key}: {value} files' for key,value in sorted(counts.items()))}
 
 ## Verification
 

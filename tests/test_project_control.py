@@ -39,6 +39,13 @@ def test_control_outputs_and_explanations_are_registered_for_github() -> None:
     assert explanation["channel"] == "GitHub"
 
 
+def test_thesis_writing_package_is_public_but_frozen_data_are_not() -> None:
+    guide = CONTROL.classify(PROJECT / "00_THESIS_WRITING_GUIDE" / "README.md")
+    frozen = CONTROL.classify(PROJECT / "outputs" / "hfq_final" / "final_event_pool_v1.csv")
+    assert guide["channel"] == "GitHub"
+    assert frozen["channel"] == "DataVault"
+
+
 def test_all_required_directory_explanations_exist() -> None:
     required = [
         "README.md",
@@ -59,6 +66,14 @@ def test_all_required_directory_explanations_exist() -> None:
         "tests/README.md",
         "tools/README.md",
         "outputs/README.md",
+        "00_THESIS_WRITING_GUIDE/README.md",
+        "00_THESIS_WRITING_GUIDE/01_Introduction/README.md",
+        "00_THESIS_WRITING_GUIDE/02_Literature_Review/README.md",
+        "00_THESIS_WRITING_GUIDE/03_Data_and_Methodology/README.md",
+        "00_THESIS_WRITING_GUIDE/04_Empirical_Results/README.md",
+        "00_THESIS_WRITING_GUIDE/05_Robustness_and_Additional/README.md",
+        "00_THESIS_WRITING_GUIDE/06_Discussion/README.md",
+        "00_THESIS_WRITING_GUIDE/07_Conclusion/README.md",
+        "00_THESIS_WRITING_GUIDE/08_Appendices/README.md",
     ]
     assert all((PROJECT / item).is_file() for item in required)
-
