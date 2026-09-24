@@ -1,5 +1,5 @@
 {
-  "generated_utc": "2026-09-24T04:08:23+00:00",
+  "generated_utc": "2026-09-24T04:11:58+00:00",
   "root": "D:\\HuaweiMoveData\\Users\\yish8288\\Desktop\\FYP\\csi300_breakout_events",
   "files": [
     {
@@ -60,12 +60,12 @@
     {
       "path": "catalog/migration_inventory.csv",
       "bytes": 4829150,
-      "sha256": "87572efef50d42ae6f72629841f93722b33942bce889687624012f993c0bf81d"
+      "sha256": "050eab428d3593b09dc97069f5addc8a0d34eb2ca5e48110f79e41f93238cc16"
     },
     {
       "path": "catalog/Migration_Review.xlsx",
-      "bytes": 1370652,
-      "sha256": "08a9a44d7d9e3dac137adac6790046bea449bf7811f8abcfe728fa263cc80337"
+      "bytes": 1406945,
+      "sha256": "0b5e2dd337b0b8f39d3bc1a91fdcde4e76e6d6c83cbd925edd1565789d38b66c"
     },
     {
       "path": "catalog/README.md",
@@ -74,8 +74,8 @@
     },
     {
       "path": "catalog/runs.csv",
-      "bytes": 1533,
-      "sha256": "005d34ac32c3f82ac4bf4dd67914a2c5ed1f347fe4fdff9a3c173165cd5ae137"
+      "bytes": 1552,
+      "sha256": "8fac71d23b2110512cef731f8ad3083ae5bd93228d1c90ad6eb3f6335c2696f5"
     },
     {
       "path": "config/eastmoney_price_audit.json",
@@ -149,8 +149,8 @@
     },
     {
       "path": "docs/Research_Project_Map.xlsx",
-      "bytes": 29572,
-      "sha256": "3ae11975b53abd6d16e81879144e6c110542a7ae9d0a1cd57a5315a74e709542"
+      "bytes": 29581,
+      "sha256": "5ac69f9178c272d087d4be7bd2c0b8f6ba93a3bbe9494cf897f8c00b107dcfa8"
     },
     {
       "path": "docs/THESIS_EVIDENCE_MATRIX.md",
