@@ -1,0 +1,28 @@
+﻿代码ID,路径,作用,核心逻辑,读取文件,写出文件,是否影响事件定义,对应测试,当前或旧版,维护说明
+C001,analysis_pipeline.py,baseline描述、分组、相关和OLS分析,读取D009，输出baseline统计结果,见代码和REPRODUCIBILITY.md,见结果登记表或测试输出,no,tests/ or internal assertions,current,修改前先确认是否触及baseline；所有命令写入D盘
+C002,final_paper_analysis_pipeline.py,生成论文Table1-7和Figure1-6,读取冻结结果并整理为论文格式,见代码和REPRODUCIBILITY.md,见结果登记表或测试输出,no,tests/ or internal assertions,current,修改前先确认是否触及baseline；所有命令写入D盘
+C003,robustness_pipeline.py,阈值、ATR、成交量窗口和Failure20稳健性,按指定维度改变定义并保存稳健性结果,见代码和REPRODUCIBILITY.md,见结果登记表或测试输出,"yes, robustness only",tests/ or internal assertions,current,修改前先确认是否触及baseline；所有命令写入D盘
+C004,run.ps1,D盘运行入口,设置D盘临时目录、运行测试或正式流程,见代码和REPRODUCIBILITY.md,见结果登记表或测试输出,no,tests/ or internal assertions,current,修改前先确认是否触及baseline；所有命令写入D盘
+C005,src/csi300_events/__init__.py,__init__模块或测试,详见文件docstring及对应测试,见代码和REPRODUCIBILITY.md,见结果登记表或测试输出,inspect before change,tests/ or internal assertions,current,修改前先确认是否触及baseline；所有命令写入D盘
+C006,src/csi300_events/__main__.py,__main__模块或测试,详见文件docstring及对应测试,见代码和REPRODUCIBILITY.md,见结果登记表或测试输出,inspect before change,tests/ or internal assertions,current,修改前先确认是否触及baseline；所有命令写入D盘
+C007,src/csi300_events/acquisition.py,acquisition模块或测试,详见文件docstring及对应测试,见代码和REPRODUCIBILITY.md,见结果登记表或测试输出,inspect before change,tests/ or internal assertions,current,修改前先确认是否触及baseline；所有命令写入D盘
+C008,src/csi300_events/adaptive_pipeline.py,adaptive_pipeline模块或测试,详见文件docstring及对应测试,见代码和REPRODUCIBILITY.md,见结果登记表或测试输出,inspect before change,tests/ or internal assertions,current,修改前先确认是否触及baseline；所有命令写入D盘
+C009,src/csi300_events/config.py,config模块或测试,详见文件docstring及对应测试,见代码和REPRODUCIBILITY.md,见结果登记表或测试输出,inspect before change,tests/ or internal assertions,current,修改前先确认是否触及baseline；所有命令写入D盘
+C010,src/csi300_events/data_quality.py,data_quality模块或测试,详见文件docstring及对应测试,见代码和REPRODUCIBILITY.md,见结果登记表或测试输出,inspect before change,tests/ or internal assertions,current,修改前先确认是否触及baseline；所有命令写入D盘
+C011,src/csi300_events/eastmoney_layer.py,eastmoney_layer模块或测试,详见文件docstring及对应测试,见代码和REPRODUCIBILITY.md,见结果登记表或测试输出,inspect before change,tests/ or internal assertions,current,修改前先确认是否触及baseline；所有命令写入D盘
+C012,src/csi300_events/formal_audit.py,formal_audit模块或测试,详见文件docstring及对应测试,见代码和REPRODUCIBILITY.md,见结果登记表或测试输出,inspect before change,tests/ or internal assertions,current,修改前先确认是否触及baseline；所有命令写入D盘
+C013,src/csi300_events/formal_pipeline.py,formal_pipeline模块或测试,详见文件docstring及对应测试,见代码和REPRODUCIBILITY.md,见结果登记表或测试输出,inspect before change,tests/ or internal assertions,current,修改前先确认是否触及baseline；所有命令写入D盘
+C014,src/csi300_events/hfq_final_sample.py,hfq_final_sample模块或测试,详见文件docstring及对应测试,见代码和REPRODUCIBILITY.md,见结果登记表或测试输出,inspect before change,tests/ or internal assertions,current,修改前先确认是否触及baseline；所有命令写入D盘
+C015,src/csi300_events/methodology.py,methodology模块或测试,详见文件docstring及对应测试,见代码和REPRODUCIBILITY.md,见结果登记表或测试输出,inspect before change,tests/ or internal assertions,current,修改前先确认是否触及baseline；所有命令写入D盘
+C016,src/csi300_events/price_source_audit.py,price_source_audit模块或测试,详见文件docstring及对应测试,见代码和REPRODUCIBILITY.md,见结果登记表或测试输出,inspect before change,tests/ or internal assertions,current,修改前先确认是否触及baseline；所有命令写入D盘
+C017,src/csi300_events/refresh_inputs.py,refresh_inputs模块或测试,详见文件docstring及对应测试,见代码和REPRODUCIBILITY.md,见结果登记表或测试输出,inspect before change,tests/ or internal assertions,current,修改前先确认是否触及baseline；所有命令写入D盘
+C018,src/csi300_events/sample_quality_audit.py,sample_quality_audit模块或测试,详见文件docstring及对应测试,见代码和REPRODUCIBILITY.md,见结果登记表或测试输出,inspect before change,tests/ or internal assertions,current,修改前先确认是否触及baseline；所有命令写入D盘
+C019,src/csi300_events/workflow.py,workflow模块或测试,详见文件docstring及对应测试,见代码和REPRODUCIBILITY.md,见结果登记表或测试输出,inspect before change,tests/ or internal assertions,current,修改前先确认是否触及baseline；所有命令写入D盘
+C020,tests/test_adaptive_pipeline.py,test_adaptive_pipeline模块或测试,详见文件docstring及对应测试,见代码和REPRODUCIBILITY.md,见结果登记表或测试输出,inspect before change,tests/ or internal assertions,current,修改前先确认是否触及baseline；所有命令写入D盘
+C021,tests/test_hfq_final_sample.py,test_hfq_final_sample模块或测试,详见文件docstring及对应测试,见代码和REPRODUCIBILITY.md,见结果登记表或测试输出,inspect before change,tests/ or internal assertions,current,修改前先确认是否触及baseline；所有命令写入D盘
+C022,tests/test_output_integrity.py,test_output_integrity模块或测试,详见文件docstring及对应测试,见代码和REPRODUCIBILITY.md,见结果登记表或测试输出,inspect before change,tests/ or internal assertions,current,修改前先确认是否触及baseline；所有命令写入D盘
+C023,tests/test_price_source_audit.py,test_price_source_audit模块或测试,详见文件docstring及对应测试,见代码和REPRODUCIBILITY.md,见结果登记表或测试输出,inspect before change,tests/ or internal assertions,current,修改前先确认是否触及baseline；所有命令写入D盘
+C024,tests/test_project_control.py,test_project_control模块或测试,详见文件docstring及对应测试,见代码和REPRODUCIBILITY.md,见结果登记表或测试输出,inspect before change,tests/ or internal assertions,current,修改前先确认是否触及baseline；所有命令写入D盘
+C025,tests/test_sample_quality_audit.py,test_sample_quality_audit模块或测试,详见文件docstring及对应测试,见代码和REPRODUCIBILITY.md,见结果登记表或测试输出,inspect before change,tests/ or internal assertions,current,修改前先确认是否触及baseline；所有命令写入D盘
+C026,tools/build_control_workbooks.mjs,build_control_workbooks模块或测试,详见文件docstring及对应测试,见代码和REPRODUCIBILITY.md,见结果登记表或测试输出,inspect before change,tests/ or internal assertions,current,修改前先确认是否触及baseline；所有命令写入D盘
+C027,tools/project_control.py,双通道同步、登记和hash验证,复制到DataVault并生成研究索引,见代码和REPRODUCIBILITY.md,见结果登记表或测试输出,no,tests/ or internal assertions,current,修改前先确认是否触及baseline；所有命令写入D盘

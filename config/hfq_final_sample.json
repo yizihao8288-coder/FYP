@@ -1,0 +1,31 @@
+{
+  "base_methodology_config": "methodology_config.json",
+  "sample_price_source": "eastmoney_hfq",
+  "processed_stock_dir": "../data/processed/eastmoney/hfq",
+  "output_dir": "../outputs/hfq_final",
+  "price_analysis_start": "2015-01-01",
+  "price_target_end": "2026-09-01",
+  "event_start": "2016-01-01",
+  "event_end": "2026-06-08",
+  "return_horizons": [3, 5, 20, 60],
+  "primary_return_horizon": 20,
+  "relative_volume_lookback": 60,
+  "future_return_definition": "adjusted_close[t+h] / adjusted_close[t] - 1 on the h-th CSI300 market trading day; no fill or interpolation",
+  "random_seed": 20260908,
+  "chart_sample_size": 10,
+  "breakout_threshold": 0.005,
+  "versions": {
+    "A_main": {
+      "bandwidth_threshold": 0.25,
+      "trend_slope_threshold": 0.0004
+    },
+    "B_strict": {
+      "bandwidth_threshold": 0.20,
+      "trend_slope_threshold": 0.0003
+    },
+    "C_loose": {
+      "bandwidth_threshold": 0.30,
+      "trend_slope_threshold": 0.0006
+    }
+  }
+}

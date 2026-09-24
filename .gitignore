@@ -1,0 +1,39 @@
+# Local Python environments and caches
+.runtime/
+node_modules/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+
+# Local and secret configuration
+config/local_paths.psd1
+.env
+.env.*
+!.env.example
+*.key
+*.pem
+
+# Raw, processed and frozen event-level data stay in the private DataVault
+data/raw/
+data/processed/
+data/frozen/
+
+# Legacy and full intermediate output trees remain in the DataVault
+outputs/**
+!outputs/README.md
+Final_Empirical_Result/
+
+# Temporary files and generated previews
+.tmp/
+tmp/
+*.tmp
+~$*
+catalog/workbook_payload.json
+catalog/workbook_renders/
+docs/workbook_renders/
+
+# OS/editor noise
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/

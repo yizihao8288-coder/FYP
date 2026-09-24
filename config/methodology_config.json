@@ -1,0 +1,51 @@
+{
+  "universe": "historical_CSI300_t_minus_1",
+  "sample_start_primary": "2016-01-01",
+  "sample_start_fallback": "2016-01-01",
+  "sample_end": "2026-06-08",
+  "min_consolidation_duration": 120,
+  "max_consolidation_duration": 252,
+  "trend_equivalent_days": 120,
+  "trend120_threshold": 0.05,
+  "distress_drawdown_threshold": -0.30,
+  "peak_lookback_before_consolidation": 252,
+  "cooldown_market_days": 60,
+  "min_valid_price_ratio": 0.95,
+  "max_consecutive_suspension": 5,
+  "peak_window_min_valid_ratio": 0.95,
+  "price_source": "Eastmoney via AKShare stock_zh_a_hist",
+  "current_adjustment_type": "hfq",
+  "target_adjustment_type": "hfq",
+  "membership_source": "BaoStock historical query_hs300_stocks snapshots",
+  "status_source": "BaoStock query_history_k_data_plus(isST, tradestatus)",
+  "industry_used_for_selection": false,
+  "turnover_used_for_selection": false,
+  "cross_validation_source": "BaoStock query_history_k_data_plus adjustflag=2",
+  "cross_validation_random_stock_count": 30,
+  "cross_validation_random_seed": 20260906,
+  "history_padding_calendar_days": 800,
+  "download_workers": 4,
+  "output_encoding": "utf-8-sig",
+  "specifications": {
+    "strict": {
+      "bandwidth_threshold": 0.20,
+      "breakout_threshold": 0.01,
+      "breakout_operator": "ge"
+    },
+    "baseline": {
+      "bandwidth_threshold": 0.25,
+      "breakout_threshold": 0.005,
+      "breakout_operator": "ge"
+    },
+    "relaxed": {
+      "bandwidth_threshold": 0.30,
+      "breakout_threshold": 0.0,
+      "breakout_operator": "gt"
+    }
+  },
+  "processed_stock_dir": "../data/processed/eastmoney/hfq",
+  "membership_path": "../data/processed/csi300_membership.csv",
+  "calendar_path": "../data/processed/trading_calendar.csv",
+  "raw_dir": "../data/raw",
+  "output_dir": "../outputs/hfq_final"
+}

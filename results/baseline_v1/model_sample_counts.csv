@@ -1,0 +1,5 @@
+﻿dependent_variable,complete_case_count,excluded_for_missing_count,predictors
+R3,192,1,RelativeVolume + Drawdown + Duration + BreakoutStrength
+R5,193,0,RelativeVolume + Drawdown + Duration + BreakoutStrength
+R20,192,1,RelativeVolume + Drawdown + Duration + BreakoutStrength
+R60,192,1,RelativeVolume + Drawdown + Duration + BreakoutStrength

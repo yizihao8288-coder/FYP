@@ -1,0 +1,25 @@
+[project]
+name = "csi300-breakout-events"
+version = "0.1.0"
+description = "Point-in-time CSI 300 drawdown-consolidation-breakout event dataset builder."
+requires-python = ">=3.10"
+dependencies = [
+  "numpy>=1.24",
+  "pandas>=2.0",
+  "baostock>=0.9.3",
+  "akshare>=1.18.88",
+  "yfinance>=1.7.0",
+]
+
+[project.scripts]
+csi300-events = "csi300_events.workflow:main"
+
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools]
+package-dir = {"" = "src"}
+
+[tool.setuptools.packages.find]
+where = ["src"]

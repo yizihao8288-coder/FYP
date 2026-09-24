@@ -1,0 +1,17 @@
+﻿结果ID,文件名,类型,路径,研究问题,输入数据ID及hash,生成代码,模型或参数,主要结论,解释边界,论文位置,验证状态
+T01,Table1.xlsx,table,results/paper_v1/Tables/Table1.xlsx,描述193个事件的变量分布,D009,final_paper_analysis_pipeline.py,描述统计,见对应文件与THESIS_EVIDENCE_MATRIX.md,报告样本分布，不作因果解释,Chapter 4 Descriptive Statistics,validated
+T02,Table2.xlsx,table,results/paper_v1/Tables/Table2.xlsx,检验ln_RVOL与未来收益关系,D009,final_paper_analysis_pipeline.py,"OLS + HC3, Model1/2",见对应文件与THESIS_EVIDENCE_MATRIX.md,条件相关，不是因果或可交易收益,Chapter 4 Regression,validated
+T03,Table3.xlsx,table,results/paper_v1/Tables/Table3.xlsx,比较RVOL三分位组后续收益,D009,final_paper_analysis_pipeline.py,ln_RVOL terciles,见对应文件与THESIS_EVIDENCE_MATRIX.md,分组差异是描述性证据,Chapter 4 Group Analysis,validated
+T04,Table4.xlsx,table,results/paper_v1/Tables/Table4.xlsx,检验0.5%、1%、2%突破阈值敏感性,"D009,D014",final_paper_analysis_pipeline.py,controlled R20 OLS HC3,见对应文件与THESIS_EVIDENCE_MATRIX.md,事件池重新识别，不能视为机械子样本,Chapter 4 Robustness,validated
+T05,Table5.xlsx,table,results/paper_v1/Tables/Table5.xlsx,比较0.5%与ATR20突破,"D009,D014",final_paper_analysis_pipeline.py,controlled R20 OLS HC3,见对应文件与THESIS_EVIDENCE_MATRIX.md,ATR是补充，不替代baseline,Chapter 4 Robustness,validated
+T06,Table6.xlsx,table,results/paper_v1/Tables/Table6.xlsx,比较RVOL20/60/120,"D009,D014",final_paper_analysis_pipeline.py,controlled R20 OLS HC3,见对应文件与THESIS_EVIDENCE_MATRIX.md,显著性随窗口改变,Chapter 4 Robustness,validated
+T07,Table7.xlsx,table,results/paper_v1/Tables/Table7.xlsx,检验Failure20与ln_RVOL关系,"D009,D014",final_paper_analysis_pipeline.py,Logit Model2,见对应文件与THESIS_EVIDENCE_MATRIX.md,模型型标准误，不是HC3,Chapter 4 Failure Analysis,validated
+F01,Figure1.png/pdf,figure,results/paper_v1/Figures/Figure1.png/pdf,展示RVOL组别R20均值,D009,final_paper_analysis_pipeline.py,bar chart,见对应文件与THESIS_EVIDENCE_MATRIX.md,均值差异不等于因果影响,Chapter 4 Group Analysis,validated
+F02,Figure2.png/pdf,figure,results/paper_v1/Figures/Figure2.png/pdf,展示RVOL组别R60均值,D009,final_paper_analysis_pipeline.py,bar chart,见对应文件与THESIS_EVIDENCE_MATRIX.md,受长期收益波动影响,Chapter 4 Group Analysis,validated
+F03,Figure3.png/pdf,figure,results/paper_v1/Figures/Figure3.png/pdf,展示ln_RVOL与R20散点及拟合线,D009,final_paper_analysis_pipeline.py,scatter + linear fit,见对应文件与THESIS_EVIDENCE_MATRIX.md,少数极端点保留,Chapter 4 Correlation,validated
+F04,Figure4.png/pdf,figure,results/paper_v1/Figures/Figure4.png/pdf,展示不同突破阈值核心系数,"D009,D014",final_paper_analysis_pipeline.py,coefficient plot,见对应文件与THESIS_EVIDENCE_MATRIX.md,样本随阈值变化,Chapter 4 Robustness,validated
+F05,Figure5.png/pdf,figure,results/paper_v1/Figures/Figure5.png/pdf,展示成交量窗口核心系数,"D009,D014",final_paper_analysis_pipeline.py,coefficient plot,见对应文件与THESIS_EVIDENCE_MATRIX.md,窗口选择影响精度,Chapter 4 Robustness,validated
+F06,Figure6.png/pdf,figure,results/paper_v1/Figures/Figure6.png/pdf,展示RVOL组别Failure20比例,"D009,D014",final_paper_analysis_pipeline.py,bar chart,见对应文件与THESIS_EVIDENCE_MATRIX.md,失败定义严格且非因果,Chapter 4 Failure Analysis,validated
+A01,event_year_distribution.png,figure,results/audit_20260919/Figures/event_year_distribution.png,展示年度事件集中度,D009,audit_pipeline.py,event count by year,见对应文件与THESIS_EVIDENCE_MATRIX.md,2019年集中提示市场状态风险,Sample Audit,validated
+R01,empirical_results_summary.md,report,results/paper_v1/empirical_results_summary.md,汇总主结果与解释边界,"T01-T07,F01-F06",final_paper_analysis_pipeline.py,n.a.,见对应文件与THESIS_EVIDENCE_MATRIX.md,只报告关联,Chapter 4 writing source,validated
+R02,Research_Master_Document.md,report,results/audit_20260919/Research_Master_Document.md,重建完整研究流程,D001-D015,audit_pipeline.py,research audit,见对应文件与THESIS_EVIDENCE_MATRIX.md,行业数据为当前快照,Project documentation,validated

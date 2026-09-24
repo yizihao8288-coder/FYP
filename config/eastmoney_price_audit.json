@@ -1,0 +1,19 @@
+{
+  "methodology_config": "methodology_config.json",
+  "download_start": "2013-10-24",
+  "download_end": "2026-09-01",
+  "eastmoney_adjustments": ["raw", "hfq"],
+  "eastmoney_raw_dir": "../data/raw/eastmoney",
+  "eastmoney_processed_dir": "../data/processed/eastmoney",
+  "baostock_raw_dir": "../data/raw/baostock/full_qfq",
+  "baostock_processed_dir": "../data/processed/baostock/qfq",
+  "yahoo_raw_dir": "../data/raw/yahoo_sample",
+  "baostock_status_dir": "../data/raw/baostock/status",
+  "output_dir": "../outputs/eastmoney_price_audit",
+  "random_seed": 20260907,
+  "yahoo_sample_size": 36,
+  "request_timeout_seconds": 20,
+  "request_pause_seconds": 3.2,
+  "max_download_attempts": 5,
+  "output_encoding": "utf-8-sig"
+}

@@ -1,0 +1,320 @@
+{
+  "generated_utc": "2026-09-20T04:10:31.508921+00:00",
+  "files": [
+    {
+      "path": "FINAL_PROJECT_STATUS.md",
+      "bytes": 3279,
+      "sha256": "520ce83a0ad3eb538a7228b855663aedd552f0cc9eb2850eafcecabcf69779c9"
+    },
+    {
+      "path": "Project_File_Inventory.md",
+      "bytes": 1475598,
+      "sha256": "57caab62831ad5b144f437c5036154c246052142bfc5bdf028740161335ed6d6"
+    },
+    {
+      "path": "Research_Master_Document.md",
+      "bytes": 6373,
+      "sha256": "48c22d59c5ad1cf59dcdf6043e82682420a935e902da15e126cc0bd4ac763336"
+    },
+    {
+      "path": "Reviewer_Report.md",
+      "bytes": 3392,
+      "sha256": "cf8e0dab5bc5dea09e543010ee956132bd0af170b9f06a31f9ae0c50ae785f99"
+    },
+    {
+      "path": "audit_pipeline.py",
+      "bytes": 59148,
+      "sha256": "6135617d8ed821f9d551992050eaa1fe330d2f4cfb4c020a1aa4dd4139c40660"
+    },
+    {
+      "path": "build_audit_workbooks.mjs",
+      "bytes": 10549,
+      "sha256": "d5012c02ceddac3f2b9e43c91606fea55d61918681786a138a450b044590e221"
+    },
+    {
+      "path": "failure60_results.xlsx",
+      "bytes": 31031,
+      "sha256": "71209c40fdf90ce6dd5c1d712469ce46d15ccbcf3fafc8c753ea6f927f0fc6c2"
+    },
+    {
+      "path": "market_adjusted_results.xlsx",
+      "bytes": 39529,
+      "sha256": "83a775efbf894dd8baf7bfd858a7c5a544d2cc276f46ed2faa8718d6f1a1e832"
+    },
+    {
+      "path": "model_audit.md",
+      "bytes": 1923,
+      "sha256": "c89098898f9682f8b464af26315a7510e3c13969f3ad603770b2a98b7b3aca35"
+    },
+    {
+      "path": "sample_audit.xlsx",
+      "bytes": 17187,
+      "sha256": "59faec2ef523979444fa92b72e89fd04b14ab9a336de249685fc50bfd9a27176"
+    },
+    {
+      "path": "threshold_robustness_summary.xlsx",
+      "bytes": 9719,
+      "sha256": "048adf4e9585b98f64b9743962d3db5abbb93ad0572d7f33ea4447de3f945eba"
+    },
+    {
+      "path": "variable_audit.md",
+      "bytes": 1994,
+      "sha256": "bc626d24d0994b950a1b4c43904c9cb0401a897839ee6303ea6e2f27c837205d"
+    },
+    {
+      "path": "evidence/audit_results.json",
+      "bytes": 957,
+      "sha256": "d25c97bc049fff68da8ee24651701a7d432a71d5c26983438f05046b6a390bc9"
+    },
+    {
+      "path": "evidence/baseline_descriptive_statistics.csv",
+      "bytes": 1741,
+      "sha256": "24d47b646386ea177044beb9668db9e8b9ddd54a3ceea776ef6aadfda1250050"
+    },
+    {
+      "path": "evidence/design_diagnostics.json",
+      "bytes": 516,
+      "sha256": "68e140b621519aee7f7f75578393b7fa13ddf07aa2b0c7443b1d2c3b57383a51"
+    },
+    {
+      "path": "evidence/duplicate_stock_date_events.csv",
+      "bytes": 744,
+      "sha256": "628466664ff8f5a972d9a52eac0751d5c61d64f7cdcab0c481596771f72ab591"
+    },
+    {
+      "path": "evidence/event_year_distribution.csv",
+      "bytes": 357,
+      "sha256": "ce5548f96add2633831935845fa571c67a2fada1ff06e698f5c380c8054dbf33"
+    },
+    {
+      "path": "evidence/failure60_events.csv",
+      "bytes": 28525,
+      "sha256": "5d365a14b4d91e1e347bb10ea2c10903e4b4039cb3cc672b39697fbf71563762"
+    },
+    {
+      "path": "evidence/failure60_logit_results.csv",
+      "bytes": 1059,
+      "sha256": "68476c312c30e85acc904e08425e8b10d40df306e488a9e6d82eb68afa01f37e"
+    },
+    {
+      "path": "evidence/failure60_rvol_groups.csv",
+      "bytes": 108,
+      "sha256": "a0a383605c1a2e91c21cfcea9677846820431d61bcfea0efb3e3a20cb39a16a9"
+    },
+    {
+      "path": "evidence/failure60_status_counts.csv",
+      "bytes": 107,
+      "sha256": "3a601667ccdb341ae47ed13d1b8bbcee40c753be222f71ae669eefd5463ce628"
+    },
+    {
+      "path": "evidence/industry_event_distribution_current_snapshot.csv",
+      "bytes": 2775,
+      "sha256": "4b190a0cd04c71cf502774a6def7de90ca32b7b2812ed8aa4404f6be42bbb9b7"
+    },
+    {
+      "path": "evidence/market_adjusted_event_data.csv",
+      "bytes": 46109,
+      "sha256": "399b77f4f88be523f3820f3e319e2097a2f4911aca44b4564843b68d9cfe12e8"
+    },
+    {
+      "path": "evidence/market_adjusted_regression_results.csv",
+      "bytes": 1917,
+      "sha256": "f57682841637f036ee6dc30b75a1bacb14c55fb7521ad596e876d47a5f274fdd"
+    },
+    {
+      "path": "evidence/market_adjusted_summary.csv",
+      "bytes": 238,
+      "sha256": "b70966698bb911dc8a479855e1e90815f503dd07d23c3153b6da0c139245adf4"
+    },
+    {
+      "path": "evidence/original_file_manifest.json",
+      "bytes": 2605937,
+      "sha256": "5c7cf54a442e570fe7a9ccd211db7f76d28aeb219f086b7b346dd072fdfd1c5e"
+    },
+    {
+      "path": "evidence/preservation_check.json",
+      "bytes": 247,
+      "sha256": "206c7576392206ac650074fe7a9ed8f8ffa2f3b44ec3ceadf4398d4006b66bbe"
+    },
+    {
+      "path": "evidence/project_file_inventory.csv",
+      "bytes": 2112517,
+      "sha256": "9901de59df61c964b8f4e8bc598483ef6e8e7c1baac550f9ba23725339562138"
+    },
+    {
+      "path": "evidence/sample_events_with_current_industry.csv",
+      "bytes": 132177,
+      "sha256": "c93f9a8cbc6b432ea03d9dbe5ba7154b0a8fb646a9beb04a7a8ddd79018da150"
+    },
+    {
+      "path": "evidence/sample_summary.csv",
+      "bytes": 984,
+      "sha256": "87eb135a5cc92eafc926cfa72f402d838a8235acfbd7c2c3fb890735501ee680"
+    },
+    {
+      "path": "evidence/stock_event_counts.csv",
+      "bytes": 7702,
+      "sha256": "ba31d39cd455750bf3fd93bfe504d89300330c7a869207a88074f8803ef018b2"
+    },
+    {
+      "path": "evidence/threshold_definition_comparison.csv",
+      "bytes": 802,
+      "sha256": "fb02786d27b7dac9b346ee07d74955127882bf7a1ebf7675d499329f7da2968f"
+    },
+    {
+      "path": "evidence/threshold_robustness_core_results.csv",
+      "bytes": 6481,
+      "sha256": "0773b88b7db04a2cbacbefe260f8ef683fafa767f5ed177fe3ae43a6c2b5b3ec"
+    },
+    {
+      "path": "evidence/workbook_payload.json",
+      "bytes": 298431,
+      "sha256": "81f05acb659c21fd8ab3525593097f02f7648aafe065342edc9b63b9502a375d"
+    },
+    {
+      "path": "evidence/workbook_verification.json",
+      "bytes": 8020,
+      "sha256": "882f6f125572fa3ae2743308e00fc812a9de7510e64fd76459389ce6f1d4807d"
+    },
+    {
+      "path": "Figures/event_year_distribution.png",
+      "bytes": 70066,
+      "sha256": "5e5076f67cc32d37a1e89270e5ef35f08f293b73255a9f868606d1a821bbf5c7"
+    },
+    {
+      "path": "sources/baostock-0.9.3-py3-none-any.whl",
+      "bytes": 51125,
+      "sha256": "acbd19403285bc4e254cee8297cf0e2646ae2276e5af7e549deed3988ab02293"
+    },
+    {
+      "path": "sources/baostock-0.9.3-py3-none-any.whl.metadata.json",
+      "bytes": 398,
+      "sha256": "41a86d36b20852ffba51be825c9ca4b261b88c8c8f8393058edecc4ccafca5bd"
+    },
+    {
+      "path": "sources/baostock_pypi.json",
+      "bytes": 25005,
+      "sha256": "ce73d1ed66a6c75980f700fee8388c01fac32bd41dd1f39d671dcdca6fb94fa6"
+    },
+    {
+      "path": "sources/baostock_pypi.json.metadata.json",
+      "bytes": 287,
+      "sha256": "260d4456f14468b9d303bb5ab606a216d57280db06dae9193f89e9e85397aa38"
+    },
+    {
+      "path": "sources/csi300_index_daily.csv",
+      "bytes": 296551,
+      "sha256": "1f816fcc66e71c3666eeb01ceaec44de0923c76d5e09f778ed2d30ee24085fdf"
+    },
+    {
+      "path": "sources/csi300_index_daily.metadata.json",
+      "bytes": 306,
+      "sha256": "8e25b0a74937c229173aea406365e53610e9c85ede3f8788ef4649632f416e4c"
+    },
+    {
+      "path": "sources/industry_snapshot_baostock.csv",
+      "bytes": 475015,
+      "sha256": "dada6292c601790c996aa060aa6a3d4b42b618324e5cadb6a80462b4c0106e28"
+    },
+    {
+      "path": "sources/industry_snapshot_baostock.metadata.json",
+      "bytes": 281,
+      "sha256": "3c12e5ea4e30228d345a7fb4d92aeb3dd64c2040bf34cf35f2c2bbb044618a58"
+    },
+    {
+      "path": "sources/retrieval_errors.json",
+      "bytes": 133,
+      "sha256": "3400ab28cd82a46439e4ca1c911d4156ef9ebcc75a8a02d790562bfc6daf3ed5"
+    },
+    {
+      "path": "workbook_renders/failure60_results__Event_Data.png",
+      "bytes": 516456,
+      "sha256": "819ff3b507543e495b43d94c8b3671f850aa75ca5eedf71b099ec008dc4ed2af"
+    },
+    {
+      "path": "workbook_renders/failure60_results__Notes.png",
+      "bytes": 18972,
+      "sha256": "d5ecf942bc04112838ecd7cc87541f9a753857c9756f2d0c10981119ce5f767d"
+    },
+    {
+      "path": "workbook_renders/failure60_results__RVOL_Groups.png",
+      "bytes": 13404,
+      "sha256": "3e29a387a985ece9aad8d6436e54d22683c6efd5622f56878a7b43ba57ec3407"
+    },
+    {
+      "path": "workbook_renders/failure60_results__Regression_Results.png",
+      "bytes": 41944,
+      "sha256": "5781ea0a04cdaf2ac43a3c45926f16801916056960499afb27eb6065918d49c2"
+    },
+    {
+      "path": "workbook_renders/failure60_results__Status_Counts.png",
+      "bytes": 12372,
+      "sha256": "eb0b7ed4024554863dd806ca23be24d1d0cc7de4bbc715354298efdfcd9e9e62"
+    },
+    {
+      "path": "workbook_renders/market_adjusted_results__Event_Data.png",
+      "bytes": 529781,
+      "sha256": "8c6f4f3025f37cf66060ca8167bff50f8471e03e1f96d51634ed9e1f85adc1e0"
+    },
+    {
+      "path": "workbook_renders/market_adjusted_results__Notes.png",
+      "bytes": 18449,
+      "sha256": "c0fdc4f8e9ca3d37e03476027adbe2cba918e0a5cf7d165a35df88626691cf56"
+    },
+    {
+      "path": "workbook_renders/market_adjusted_results__Regression_Results.png",
+      "bytes": 67364,
+      "sha256": "56955188877d1615056b0c079ba3fa99da84e5746588f23466b7fd0cdf7008d8"
+    },
+    {
+      "path": "workbook_renders/market_adjusted_results__Summary.png",
+      "bytes": 16942,
+      "sha256": "f877712b82d495fcb27261758fce60888726a82dd415187eaed4be65835cfbfc"
+    },
+    {
+      "path": "workbook_renders/sample_audit__Duplicates.png",
+      "bytes": 5534,
+      "sha256": "794a04090a03eacf18811b257c728e03fa0cca1b90b8311900ff54603a041b58"
+    },
+    {
+      "path": "workbook_renders/sample_audit__Industry_Snapshot.png",
+      "bytes": 153256,
+      "sha256": "11daabbe2eeadf0ba7b389b9fa066af98968e4008e55cb0586d9100deeb570eb"
+    },
+    {
+      "path": "workbook_renders/sample_audit__Notes.png",
+      "bytes": 16614,
+      "sha256": "a7bf01701b74157d870360f9848b7d2a79aac5286580374b708e193e836c9e61"
+    },
+    {
+      "path": "workbook_renders/sample_audit__Overview.png",
+      "bytes": 65401,
+      "sha256": "d289467dd8e9bfcc46f00fdef538fb3384228fd29762ce0118df2a984ec56ca8"
+    },
+    {
+      "path": "workbook_renders/sample_audit__Stock_Counts.png",
+      "bytes": 408460,
+      "sha256": "f60f76421e1e6e20d6b9537745d887213577dcdd770414c9fed425898834b7f6"
+    },
+    {
+      "path": "workbook_renders/sample_audit__Year_Distribution.png",
+      "bytes": 42440,
+      "sha256": "a6fcb3a5971de8e2b9b432555c06961beb422a0dd68fcb485fef7d73f35c2306"
+    },
+    {
+      "path": "workbook_renders/threshold_robustness_summary__Core_Results.png",
+      "bytes": 269788,
+      "sha256": "b45daeed0fd677546280aa50150efeeb203bb46d56ab4071571c027b6001c2d3"
+    },
+    {
+      "path": "workbook_renders/threshold_robustness_summary__Design_Comparison.png",
+      "bytes": 51226,
+      "sha256": "56a846db60d3840403687821e91eb5b049de425e8b36873532c6fba3f9765fb8"
+    },
+    {
+      "path": "workbook_renders/threshold_robustness_summary__Notes.png",
+      "bytes": 20000,
+      "sha256": "805b86e6e2c6cf275d9c288717c762f30501ce7e041e330e7d5b5c796eaf1c49"
+    }
+  ]
+}

@@ -1,0 +1,7 @@
+﻿运行ID,日期,Git commit,输入数据hash,参数版本,执行命令,输出结果ID,测试结果,是否成功,备注
+RUN001,2026-09,pre-Git historical run,6e8485a4716caa6035bf0616d0b4dd9b7b91da8adf7c611053933460f836a889,baseline_v1,formal pipeline; exact invocation not independently recorded,"D008,D009",hash verified,yes,历史运行，时间粒度仅能确认到现有文件记录
+RUN002,2026-09-10,pre-Git historical run,94d52af2f33639cc336a6967d3fecfdccc2a2fc3f8b6ae265d116ae457ce0f76,baseline_v1,analysis_pipeline.py,T01-T03,independently audited,yes,未修改冻结样本
+RUN003,2026-09-19,pre-Git historical run,94d52af2f33639cc336a6967d3fecfdccc2a2fc3f8b6ae265d116ae457ce0f76,robustness_v1,robustness_pipeline.py,T04-T07,core models reproduced,yes,threshold_robustness.xlsx扩展名缺陷另行登记
+RUN004,2026-09-19,pre-Git historical run,94d52af2f33639cc336a6967d3fecfdccc2a2fc3f8b6ae265d116ae457ce0f76,paper_v1,final_paper_analysis_pipeline.py,"T01-T07,F01-F06,R01",saved validation completed,yes,论文级结果包
+RUN005,2026-09-20,pre-Git historical run,94d52af2f33639cc336a6967d3fecfdccc2a2fc3f8b6ae265d116ae457ce0f76,audit_20260919,audit_pipeline.py,"A01,R02",8754 original hashes unchanged,yes,新增市场调整与Failure60，不改baseline
+RUN006,2026-09-24,not committed yet,94d52af2f33639cc336a6967d3fecfdccc2a2fc3f8b6ae265d116ae457ce0f76,control_v1,python tools/project_control.py all,project registries and manifests,由verification_report.json记录,pending,双通道同步与研究说明系统
