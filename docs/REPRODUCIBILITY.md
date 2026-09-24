@@ -49,4 +49,4 @@ Set-Location 'D:\HuaweiMoveData\Users\yish8288\Desktop\FYP\csi300_breakout_event
 
 ## 恢复测试
 
-在另一个D盘目录执行：克隆私有仓库；将DataVault接入同一路径或设置`FYP_DATA_ROOT`；安装锁定依赖；运行`verify`。恢复测试只有在hash、文件登记和正式结果来源链全部一致时才算成功。当前本机已建立恢复规则，但真正的第二目录/第二设备恢复仍需在私有远端和D盘云同步完成后执行。
+在另一个D盘目录执行：克隆GitHub仓库；将DataVault接入同一路径或设置`FYP_DATA_ROOT`；安装锁定依赖；运行`verify`。恢复测试只有在hash、文件登记和正式结果来源链全部一致时才算成功。当前本机已建立恢复规则，但真正的第二目录/第二设备恢复仍需在GitHub远端和D盘云同步完成后执行。

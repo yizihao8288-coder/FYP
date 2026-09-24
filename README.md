@@ -2,6 +2,8 @@
 
 本仓库保存研究代码、研究设计、验证规则、论文级结果和文件索引。原始行情、处理缓存和冻结事件级数据保存在D盘私有DataVault，不上传GitHub。
 
+公开仓库：`https://github.com/yizihao8288-coder/FYP`。公开可见内容限于本仓库已登记的代码、文档、精选论文结果和manifest；DataVault中的原始、处理及冻结事件级数据不在公开范围内。
+
 ## 从这里开始
 
 1. [Research Control Center](docs/RESEARCH_CONTROL_CENTER.md)：当前做到哪里、哪些文件有效、下一步是什么。
@@ -25,7 +27,7 @@
 
 | 通道 | 保存内容 | 默认位置 |
 |---|---|---|
-| GitHub | 代码、测试、配置、说明、manifest、论文级结果 | 本仓库 |
+| GitHub（Public） | 代码、测试、配置、说明、manifest、论文级结果 | `yizihao8288-coder/FYP` |
 | DataVault | 原始数据、处理数据、冻结数据、完整旧输出和旧方案 | `D:\FYP_DataVault\csi300_breakout_events` |
 
 DataVault目前已经在D盘建立。它仍需接入一个同样位于D盘的私有云盘客户端，才能成为真正的异地同步副本。
@@ -75,4 +77,3 @@ D:\Python\Anaconda3\envs\clean\python.exe tools\project_control.py report
 - 现有HC3标准误不处理同股或同日期相关。
 - 当前行业快照不能代替事件时点历史行业。
 - close-based信号在收盘后才完整可知，不能直接解释为同一收盘价可执行策略。
-

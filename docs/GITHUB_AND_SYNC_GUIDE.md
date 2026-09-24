@@ -2,7 +2,7 @@
 
 ## 两个通道分别解决什么问题
 
-- 私有GitHub保存小而可读、需要版本差异的内容：代码、测试、配置说明、研究决定、manifest、论文表图。
+- GitHub保存小而可读、需要版本差异的内容：代码、测试、配置说明、研究决定、manifest、论文表图。自2026-09-24起，仓库按用户决定保持Public。
 - DataVault保存大而敏感、适合逐字节校验的内容：原始行情、处理行情、冻结数据、完整旧输出和归档。
 - manifest保存每个文件的相对路径、大小和SHA-256。GitHub中的代码通过数据ID与hash引用DataVault中的输入。
 
@@ -10,9 +10,9 @@ Git不是数据备份系统，云盘也不是代码版本控制系统。双通�
 
 ## GitHub规则
 
-1. 仓库必须保持Private，答辩后再单独审查公开范围。
-2. 不提交`.runtime`、行情数据、事件级冻结数据、密钥或本机私有配置。
-3. 提交前运行`python tools/project_control.py verify`并检查`git status`。
+1. 当前公开仓库是`https://github.com/yizihao8288-coder/FYP`；可见性变化必须新增ADR记录，不能静默修改。
+2. 公开范围只包括代码、文档、精选论文结果和manifest；不提交`.runtime`、行情数据、事件级冻结数据、密钥或本机私有配置。
+3. 每次公开推送前运行`python tools/project_control.py verify`、检查`git status`并执行敏感信息与禁止路径检查。
 4. 每个稳定研究变更形成一个可解释的commit；不要把不同研究决定混进同一提交。
 5. 需要改变事件定义时新建版本，不覆盖baseline v1。
 

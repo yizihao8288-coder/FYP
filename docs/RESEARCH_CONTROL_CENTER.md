@@ -33,11 +33,11 @@ The event pool D008 has SHA-256 `6e8485a4716caa6035bf0616d0b4dd9b7b91da8adf7c611
 - Current-industry concentration diagnostic and CSI300 market-adjusted returns.
 - Full research audit, reviewer report and project reconstruction.
 - D-drive DataVault, file registries, curated results and automated verification.
+- Public GitHub repository connected at `https://github.com/yizihao8288-coder/FYP`; only approved code, documentation, manifests and curated results are published.
 
 ## In progress
 
 - Connect `D:\FYP_DataVault\csi300_breakout_events` to an off-device private cloud client located on D drive.
-- Connect the initialized local Git repository to a private GitHub remote.
 - Use the evidence matrix to draft Chapter 4 and defence responses.
 
 ## Next recommended analysis
@@ -90,4 +90,3 @@ These results do not establish a causal effect of volume and do not prove an exe
 - Processed data: retain the frozen version; rebuild only into a new version.
 - Old methods: archive until thesis completion.
 - Temporary files: delete only after they appear in the review workbook and receive user approval.
-

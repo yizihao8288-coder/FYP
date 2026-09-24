@@ -1,5 +1,5 @@
 {
-  "generated_utc": "2026-09-24T04:11:58+00:00",
+  "generated_utc": "2026-09-24T04:36:26+00:00",
   "root": "D:\\HuaweiMoveData\\Users\\yish8288\\Desktop\\FYP\\csi300_breakout_events",
   "files": [
     {
@@ -54,13 +54,13 @@
     },
     {
       "path": "catalog/decisions.csv",
-      "bytes": 1842,
-      "sha256": "c8e95499cf546e7c6b4caf93b33829f9030529e8a71d9f1e957d9ce242cb807f"
+      "bytes": 2140,
+      "sha256": "d0743506322a1ebc43e73905e75eda5bf0a23b308e8e60520403f0cf4db58263"
     },
     {
       "path": "catalog/migration_inventory.csv",
-      "bytes": 4829150,
-      "sha256": "050eab428d3593b09dc97069f5addc8a0d34eb2ca5e48110f79e41f93238cc16"
+      "bytes": 4829511,
+      "sha256": "40e908960441cc8a6a6d2b6f33cf0ec62f5a6fdd4b72fb569bd343c73d1df8b1"
     },
     {
       "path": "catalog/Migration_Review.xlsx",
@@ -75,7 +75,7 @@
     {
       "path": "catalog/runs.csv",
       "bytes": 1552,
-      "sha256": "8fac71d23b2110512cef731f8ad3083ae5bd93228d1c90ad6eb3f6335c2696f5"
+      "sha256": "74b3ab3e3134b9515efbb65320329dd1922b7a0f23d9759ca24fac582dc62852"
     },
     {
       "path": "config/eastmoney_price_audit.json",
@@ -119,13 +119,13 @@
     },
     {
       "path": "docs/DECISION_LOG.md",
-      "bytes": 2259,
-      "sha256": "a4a52f30b67d46793a27b3d409f04279ae64c11d136ee6172b19b49d36c8314f"
+      "bytes": 2529,
+      "sha256": "edd4604fb04f726181e2593c412ba6a829eb05f10ccf0b894fd532e2ad0053f2"
     },
     {
       "path": "docs/GITHUB_AND_SYNC_GUIDE.md",
-      "bytes": 2336,
-      "sha256": "cdb935e6f5735eb7eca3bbbe66f2184beb1c0220a6238ba76062d5ddb97702e4"
+      "bytes": 2569,
+      "sha256": "891efdddf20f8184fd2eae17d891b2908104e2b7ab3fdb1bd29f1977501d2b3d"
     },
     {
       "path": "docs/README.md",
@@ -135,12 +135,12 @@
     {
       "path": "docs/REPRODUCIBILITY.md",
       "bytes": 2299,
-      "sha256": "d3a5bd0c7d21540898bc6989945d8959c41cf6cead93b0ea4b8bf89e51ae0439"
+      "sha256": "e322b55f04f91ddbf54849df1e3b316c9111b7384ac12662d703095da9b899cf"
     },
     {
       "path": "docs/RESEARCH_CONTROL_CENTER.md",
-      "bytes": 4476,
-      "sha256": "f3d8777cfff2739f8e70e8d8246729c73803bb6fbe115ec1e25306b1f4660179"
+      "bytes": 4564,
+      "sha256": "8af65d9a2c92cf8cc0a9c72f327c1948825a8848729f5fd1eed29ddf6a477f56"
     },
     {
       "path": "docs/RESEARCH_DESIGN.md",
@@ -149,8 +149,8 @@
     },
     {
       "path": "docs/Research_Project_Map.xlsx",
-      "bytes": 29581,
-      "sha256": "5ac69f9178c272d087d4be7bd2c0b8f6ba93a3bbe9494cf897f8c00b107dcfa8"
+      "bytes": 29917,
+      "sha256": "0fe33363f113fcf6ca0c5d0fd6b9153a60fdf45b9d7a9d0ab56f73c513e1c8bd"
     },
     {
       "path": "docs/THESIS_EVIDENCE_MATRIX.md",
@@ -179,8 +179,8 @@
     },
     {
       "path": "README.md",
-      "bytes": 3037,
-      "sha256": "5882648389ac82064e416ff495e6cd780164781a7ac3cba5abf5d37669c820bb"
+      "bytes": 3297,
+      "sha256": "6e85345027d1cfec22afb15ad65854e3b35f218d85bf3f8dd19a7847c773c38b"
     },
     {
       "path": "requirements-lock.txt",
@@ -564,13 +564,13 @@
     },
     {
       "path": "tools/build_control_workbooks.mjs",
-      "bytes": 17863,
-      "sha256": "e3e7bd7d95f5314409f1c7adc203d3a7a2590c47a476f6db06207c3e7cae2eff"
+      "bytes": 18248,
+      "sha256": "24881678f69e9013ed31b2c0cf0d361f8bb6afa85b6bc42fd2604cfd4e30134a"
     },
     {
       "path": "tools/project_control.py",
-      "bytes": 46834,
-      "sha256": "2b04b6d439f2a9ae3f00fd6e53135e263c775d579f60a8cb68232fdcffa5bc94"
+      "bytes": 47259,
+      "sha256": "46b3d163145781dcdd8183ade5e56f28eff5dacb20a1f218413cf6c85d1abd58"
     },
     {
       "path": "tools/README.md",

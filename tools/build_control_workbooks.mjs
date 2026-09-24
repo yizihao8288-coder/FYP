@@ -187,6 +187,7 @@ async function buildProjectMapWorkbook() {
     { "分类": "Existing Result", "项目": "Research question", "当前状态或数值": "困境反转突破中，ln_RVOL是否与未来收益及失败风险相关", "证据或下一步": "docs/RESEARCH_CONTROL_CENTER.md" },
     { "分类": "Existing Result", "项目": "Frozen baseline", "当前状态或数值": `${payload.baseline.events} events; ${payload.baseline.stocks} stocks`, "证据或下一步": payload.baseline.sha256 },
     { "分类": "Existing Result", "项目": "Completed", "当前状态或数值": "baseline、稳健性、Failure20/60、市场调整、研究审计、论文Table1-7/Figure1-6", "证据或下一步": "results/ and catalog/artifacts.csv" },
+    { "分类": "Existing Result", "项目": "GitHub publication", "当前状态或数值": "Public repository: yizihao8288-coder/FYP", "证据或下一步": "原始行情、处理行情和冻结事件级CSV仍只在DataVault" },
     { "分类": "Existing Result", "项目": "Interpretation", "当前状态或数值": "识别条件相关关系，不识别因果关系", "证据或下一步": "docs/THESIS_EVIDENCE_MATRIX.md" },
     { "分类": "Potential Improvement", "项目": "Inference", "当前状态或数值": "补充stock/date clustered standard errors", "证据或下一步": "不得替代HC3 baseline" },
     { "分类": "Potential Improvement", "项目": "Controls", "当前状态或数值": "年份/市场状态、事件前波动率、历史行业", "证据或下一步": "新结果必须单独登记" },
@@ -274,17 +275,22 @@ async function verifyAndRender(workbookPath, renderPrefix, sheetSpecs) {
   return { workbookPath, overview: overview.ndjson, errors: errors.ndjson, sheets: sheets.ndjson, rendered };
 }
 
-await buildMigrationWorkbook();
+const projectMapOnly = process.argv.includes("--project-map-only");
+if (!projectMapOnly) {
+  await buildMigrationWorkbook();
+}
 await buildProjectMapWorkbook();
-const verification = [
-  await verifyAndRender(migrationOutput, "Migration_Review", [
+const verification = [];
+if (!projectMapOnly) {
+  verification.push(await verifyAndRender(migrationOutput, "Migration_Review", [
     { name: "Summary", range: "A1:C28" },
     { name: "Inventory", range: "A1:K28" },
     { name: "Delete Candidates", range: "A1:K28" },
     { name: "Known Issues", range: "A1:E28" },
     { name: "README", range: "A1:B28" },
-  ]),
-  await verifyAndRender(projectMapOutput, "Research_Project_Map", [
+  ]));
+}
+verification.push(await verifyAndRender(projectMapOutput, "Research_Project_Map", [
     { name: "Current Status", range: "A1:D28" },
     { name: "Datasets", range: "A1:S28" },
     { name: "Code", range: "A1:J28" },
@@ -293,7 +299,6 @@ const verification = [
     { name: "Runs", range: "A1:J28" },
     { name: "Decisions", range: "A1:H28" },
     { name: "Missing", range: "A1:D28" },
-  ]),
-];
+  ]));
 await fs.writeFile(verificationOutput, JSON.stringify({ generated: new Date().toISOString(), verification }, null, 2), "utf8");
 console.log(JSON.stringify({ migrationOutput, projectMapOutput, verificationOutput }, null, 2));
