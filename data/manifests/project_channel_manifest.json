@@ -1,5 +1,5 @@
 {
-  "generated_utc": "2026-09-24T09:55:37+00:00",
+  "generated_utc": "2026-09-24T09:57:09+00:00",
   "root": "D:\\HuaweiMoveData\\Users\\yish8288\\Desktop\\FYP\\csi300_breakout_events",
   "files": [
     {
@@ -380,7 +380,7 @@
     {
       "path": "catalog/migration_inventory.csv",
       "bytes": 4995981,
-      "sha256": "658473addb07d7b0da5cff290364e888081c71aba0fe2df6b1c7611cda591c69"
+      "sha256": "339d9f3e9151506a060900a0274ff7217d789da881e3225ce3cbb650b92baddc"
     },
     {
       "path": "catalog/Migration_Review.xlsx",
@@ -395,7 +395,7 @@
     {
       "path": "catalog/runs.csv",
       "bytes": 1942,
-      "sha256": "36cb83f47129b45112a79b4941600387038cb6b500b3193e505f0d3e3d80f7d4"
+      "sha256": "db8e5ca0cffd2c1e243173d99b71b81470b770d56fa34854b4e30dfa55219f56"
     },
     {
       "path": "config/eastmoney_price_audit.json",
